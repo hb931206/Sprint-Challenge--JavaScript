@@ -57,7 +57,7 @@ console.log(dino1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(dino1.roar);
+console.log(dino1.sound);
 
 
 // ==== Arrays ====
@@ -80,25 +80,46 @@ const graduates = [
 /* Request 1: Create a new array called universities that contains all the universities in the graduates array. This will be an array of strings.
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
-function uni(){
-
+function uni1(){
+  const universities = [];
+  for (var i = 0; i<graduates.length; i++){
+    universities.push(graduates[i].university);
+    
+  }
+  return universities;
+  
 }
-
-
 
 console.log(universities);
 
-/* Request 2: Create a new array called contactInfo that contains both first name and email of each student. This will be an array of strings.
+/* Request 2: Create a new array called contactInfo that contains both first name and email of each student.
+ This will be an array of strings.
 
 The resulting contact information strings should have a space between the first name and the email, like this: 
 "Josh josh@example.com"
 
 Log the result of your new array. */
+
 const contactInfo = [];
+for(var i = 0; i<graduates.length; i++)
+
+
 console.log(contactInfo);
 
-/* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+/* Request 3: Find out how many universities have the string "Uni" included in their name.
+ Create a new array called unisWithUni that contains them all.
+ This will be an array of objects. Log the result. */
+
+ function uni3(){
 const unisWithUni = [];
+for(let i = 0; i<graduates.length;i++){
+  if(graduates[i].university === "Uni"){
+    unisWithUni.push(graduates[i])
+  }
+}
+return unisWithUni;
+
+ }
 console.log(unisWithUni);
 
 
