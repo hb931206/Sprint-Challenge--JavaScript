@@ -85,6 +85,7 @@ const universities = [];
   for (var i = 0; i<graduates.length; i++){
     universities.push(graduates[i].university);
   }
+  
  
   
 
@@ -101,7 +102,7 @@ Log the result of your new array. */
 
 const contactInfo = [];
 for(var i = 0; i<graduates.length; i++){
-  contactInfo.push(graduates[i].first_name, graduates[i].email);
+  contactInfo.push(graduates[i].first_name,graduates[i].email);
 }
 
 
