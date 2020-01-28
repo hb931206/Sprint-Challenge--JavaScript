@@ -150,16 +150,14 @@ const zooAnimals = [
 
 // */
 // // function getName(zooAnimals){
-// const displayNames = [];
-// zooAnimals.forEach(element => {displayNames.push(`${zooAnimals.annimal_name} ${zooAnimals.scientific_name} `)
- 
-// });
-// return displayNames; 
 
-// // Push it into Display names
-// }
+const displayNames = [];
+zooAnimals.forEach(zoo => {
+  displayNames.push(`Name: ${zoo.animal_name}, Scientific: ${zoo.scientific_name}`)
+});
 
-// console.log(displayNames);
+
+console.log(displayNames);
 
 /* Request 2: .map()
 
@@ -182,19 +180,10 @@ The zoos are concerned about animals with a lower population count.
 
 */
 
-const lowPopulationAnimals = zooAnimals.filter(zooAnimals => zooAnimals.population < 5);
+// const lowPopulationAnimals = zooAnimals.filter(zooAnimals => zooAnimals.population < 5);
 
 
-
-
-// zooAnimals.filter((population) => {
-//   return population < 5;
-
-// });
-
-
-
-console.log(lowPopulationAnimals);
+// console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
