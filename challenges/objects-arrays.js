@@ -182,19 +182,19 @@ The zoos are concerned about animals with a lower population count.
 
 */
 
-// const lowPopulationAnimals = zooAnimals.filter(animal => zooAnimals.population < 5);
+const lowPopulationAnimals = zooAnimals.filter(zooAnimals => zooAnimals.population < 5);
 
 
 
 
-// // zooAnimals.filter((population) => {
-// //   return population < 5;
+// zooAnimals.filter((population) => {
+//   return population < 5;
 
-// // });
+// });
 
 
 
-// console.log(lowPopulationAnimals);
+console.log(lowPopulationAnimals);
 
 /* Request 4: .reduce() 
 
@@ -203,9 +203,9 @@ The zoos need to know their total animal population across the United States.
   Remember the reduce method takes two arguments: a callback (which itself takes two args), and an initial value for the count.
 
 */
-const populationTotal = zooAnimals.reduce((total,zooAnimals) => total + zooAnimals.population, 0);
+// const populationTotal = zooAnimals.reduce((total,zooAnimals) => total + zooAnimals.population, 0);
 
-console.log(populationTotal);
+// console.log(populationTotal);
 
 
 /*
