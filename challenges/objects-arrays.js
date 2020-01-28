@@ -81,16 +81,16 @@ const graduates = [
 
 // Once you have the new array created, sort the universities alphabetically and log the result. */
 
-const universities = [];
-graduates.forEach(stud => {
-  universities.push(stud.university)
+// const universities = [];
+// graduates.forEach(stud => {
+//   universities.push(stud.university)
 
-});
-universities.sort();
+// });
+// universities.sort();
 
-console.log(universities); 
+// console.log(universities); 
   
-// //  Sort the results of this array. Use Sort Method
+
   
 
 
@@ -104,14 +104,15 @@ console.log(universities);
 
 // Log the result of your new array. */
 
-// const contactInfo = [];
-// for(var i = 0; i<graduates.length; i++){
-//   contactInfo.push(graduates[i].first_name,graduates[i].email);
-// }
-// // For Each
+const contactInfo = [];
+graduates.forEach(con =>{
+  contactInfo.push(`${con.first_name} ${con.email}`);
+
+});
 
 
-// console.log(contactInfo);
+
+console.log(contactInfo);
 
 // /* Request 3: Find out how many universities have the string "Uni" included in their name.
 //  Create a new array called unisWithUni that contains them all.
